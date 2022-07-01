@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : area
+Design : WRF_generic_M8_N8_F8_DATA_BIT32
+Version: F-2011.09-SP3
+Date   : Thu Apr 21 11:34:24 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          185
+Number of nets:                           219
+Number of cells:                            7
+Number of combinational cells:              3
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       6
+
+Combinational area:       16009.476159
+Noncombinational area:    20068.635272
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          36078.111431
+Total area:                 undefined
+1

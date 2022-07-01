@@ -1,0 +1,3 @@
+When the signal changes too near the clock transition, the transistors have no time to switch and charge/discharge
+the parasitic capacitance on the memory.
+The measured setup time for L->H transition is: 59.9ps

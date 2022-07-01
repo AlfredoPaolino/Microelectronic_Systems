@@ -1,0 +1,15 @@
+Critical path:
+- bit 0 XOR
+- First PG+G block for subtraction implementation
+- G1 (block of carry 1)
+- G3 (block of carry 3)
+- G7 (block of carry 7)
+- G11 (block of carry 11)
+- G15 (block of carry 15)
+- G27 (block of carry 27)
+- Within the Carry Select Box it goes through:
+	- MUX21 which selects the output of the RCA (with Carry In at '0' or '1')
+- The critical path ends at S[31] with a delay of 0.81 ns
+	(This delay is the same from S[31] to S[22], considering the 10 worst critical paths,
+	 since they are the bits which need to go through the last level of G blocks in the
+	 carry tree generator)

@@ -1,0 +1,17 @@
+The nandHScharLoad.sp netlist provides a transient analysis with sweep command to repeat
+	the analysis in precence of different load conditions.
+
+As clearly shown by the plots, the higher the load capacitance the higher the current
+	spikes needed to charge or discharge it. As a direct consequence, the area under the
+	current curve is also bigger for bigger capacitances values, this because they
+	hold overall more charges.
+By the current convention used in Eldo (active sign convention), and by the orientation
+	of the voltage generators in the netlist (refer to gate sketch in ex5.1 folder),
+	the current flowing from Vdd is always negative, the one flowing to ground is always
+	positive, meanwhile the load current is negative or positive whenever the load itself
+	is being discharged or charged respectively.
+The currents plot can be found in file waveform_currents_5_2.jpg.
+
+Moreover, it is worth mentioning that as the load capacitance increases, the response of
+	the gate slows down, since it directly affect the timing constant of the  circuit.
+Also this behavior is evident in the plot, which can be found in waveform_voltages_5_2.jpg.

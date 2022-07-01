@@ -1,0 +1,101 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ALU_N4
+Version: F-2011.09-SP3
+Date   : Fri Mar 11 12:30:44 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: OUTALU_reg[3]
+              (positive level-sensitive latch)
+  Endpoint: OUTALU[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU_N4             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  OUTALU_reg[3]/G (DLH_X1)                 0.00       0.00 r
+  OUTALU_reg[3]/Q (DLH_X1)                 0.06       0.06 f
+  OUTALU[3] (out)                          0.00       0.06 f
+  data arrival time                                   0.06
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : ALU_N4
+Version: F-2011.09-SP3
+Date   : Fri Mar 11 12:31:15 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                           16
+Number of nets:                           121
+Number of cells:                          109
+Number of combinational cells:            105
+Number of sequential cells:                 4
+Number of macros:                           0
+Number of buf/inv:                         23
+Number of references:                      22
+
+Combinational area:        118.104000
+Noncombinational area:      10.640000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           128.744000
+Total area:                 undefined
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : ALU_N4
+Version: F-2011.09-SP3
+Date   : Fri Mar 11 12:31:44 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: OUTALU_reg[3]
+              (positive level-sensitive latch)
+  Endpoint: OUTALU[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALU_N4             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  OUTALU_reg[3]/G (DLH_X1)                 0.00       0.00 r
+  OUTALU_reg[3]/Q (DLH_X1)                 0.06       0.06 f
+  OUTALU[3] (out)                          0.00       0.06 f
+  data arrival time                                   0.06
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

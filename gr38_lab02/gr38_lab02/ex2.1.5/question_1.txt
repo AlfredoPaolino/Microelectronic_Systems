@@ -1,0 +1,4 @@
+The difference among the 10 critical paths starts from the final layer of sparse carry tree generator. 
+In fact for the previous layers the path is shared and goes from pgb0 -> G_0 -> G_9 -> G_8 -> G-7 -> G_5. The presence of an additional G block (G_0) needed take in input the carry-in and to implement the subtraction make this path the longest, and so the critical one.
+After that, it branches and goes through the respective G_x ( x= 2, 3, 4 ). G_1 is not taken into account because C32 (refer to the schematic picture) it's only used as a carry-in for the next adder block and not in the current adder block.
+Going into the sum block, even if the paths are different, the overall delay will be the same for every path because every signal goes through the exact type and number of blocks. This is the reason behind the similarity of all critical delays.

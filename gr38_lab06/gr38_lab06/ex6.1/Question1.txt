@@ -1,0 +1,4 @@
+Since the question is ambiguos, we hereby provide two answers:
+
+1) If for "rectangle" it's intended the bottom window then it contains the geometrical and technological parameters in order for the foundry to produce the chip.
+2) If for "rectangle" it's intended the all die, then it represents the physical layout of the analyzed circuit

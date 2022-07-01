@@ -1,0 +1,1 @@
+A very simple datapath has been designed to test the correct behaviour of the CU_FSM and to become familiar with datapath design. Even if not requested by the lab, we decided to leave the files inside the directory if you want to have a look at them.

@@ -1,0 +1,21 @@
+Question 5
+
+The three power consumption contribution are:
+	- Total Dynamic Power
+		- Cell Internal Power
+		- Net Switching Power
+	- Cell Leakage Power
+The 53.77% of the power consumption is due to the combinational logic,
+ meanwhile the 46.23% is due to sequential logic (DFFs).
+
+Question 6
+
+Having no clock defined, synopsis is going to use the time unit collected from the
+ liberty file as default clock period.
+
+Question 7
+
+After the setting of a max_dynamic_power constraint, we expect a decrease of the
+ total dynamic power followed by an increase of the maximum delay within the circuit.
+In our specific case, we noticed that, as expected, the maximum delay increased,
+ but beeing mapped on X2 gates instead of X1 gates we eneded up having an higher dynamic power consumption too. We suppose that X2 gates are used to exploit the higher drinving force in order to make some optimizations on the critical path, but we were not able to figure out how to decrease the dynamic power consumption sticking to a X1 gate implementation.

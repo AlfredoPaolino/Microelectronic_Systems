@@ -1,0 +1,1 @@
+Comparing the reports obtained running commands on the design_vision commandline and using the script, we noticed no differences in the reports obtained.

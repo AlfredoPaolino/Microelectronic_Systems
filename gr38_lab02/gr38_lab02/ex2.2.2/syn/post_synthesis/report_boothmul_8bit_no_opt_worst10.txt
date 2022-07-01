@@ -1,0 +1,726 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : BOOTHMUL_NBIT8
+Version: F-2011.09-SP3
+Date   : Tue Mar 29 17:54:25 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.57 f
+  ADD64_i_1/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.66 f
+  ADD64_i_1/add_1_root_add_23_2/U1_14/S (FA_X1)           0.14       1.80 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[14] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.80 r
+  ADD64_i_1/S[14] (RCA_GENERIC_NBIT16_0)                  0.00       1.80 r
+  ADD64_i_2/A[14] (RCA_GENERIC_NBIT16_2)                  0.00       1.80 r
+  ADD64_i_2/add_1_root_add_23_2/A[14] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.80 r
+  ADD64_i_2/add_1_root_add_23_2/U1_14/S (FA_X1)           0.12       1.92 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[14] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.92 f
+  ADD64_i_2/S[14] (RCA_GENERIC_NBIT16_2)                  0.00       1.92 f
+  ADD64_i_3/A[14] (RCA_GENERIC_NBIT16_1)                  0.00       1.92 f
+  ADD64_i_3/add_1_root_add_23_2/A[14] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.92 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.10       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.57 f
+  ADD64_i_1/add_1_root_add_23_2/U1_13/S (FA_X1)           0.14       1.71 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[13] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.71 r
+  ADD64_i_1/S[13] (RCA_GENERIC_NBIT16_0)                  0.00       1.71 r
+  ADD64_i_2/A[13] (RCA_GENERIC_NBIT16_2)                  0.00       1.71 r
+  ADD64_i_2/add_1_root_add_23_2/A[13] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.71 r
+  ADD64_i_2/add_1_root_add_23_2/U1_13/S (FA_X1)           0.12       1.82 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[13] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.82 f
+  ADD64_i_2/S[13] (RCA_GENERIC_NBIT16_2)                  0.00       1.82 f
+  ADD64_i_3/A[13] (RCA_GENERIC_NBIT16_1)                  0.00       1.82 f
+  ADD64_i_3/add_1_root_add_23_2/A[13] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.82 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.10       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/S (FA_X1)           0.14       1.61 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[12] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.61 r
+  ADD64_i_1/S[12] (RCA_GENERIC_NBIT16_0)                  0.00       1.61 r
+  ADD64_i_2/A[12] (RCA_GENERIC_NBIT16_2)                  0.00       1.61 r
+  ADD64_i_2/add_1_root_add_23_2/A[12] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.61 r
+  ADD64_i_2/add_1_root_add_23_2/U1_12/S (FA_X1)           0.12       1.73 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[12] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.73 f
+  ADD64_i_2/S[12] (RCA_GENERIC_NBIT16_2)                  0.00       1.73 f
+  ADD64_i_3/A[12] (RCA_GENERIC_NBIT16_1)                  0.00       1.73 f
+  ADD64_i_3/add_1_root_add_23_2/A[12] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.73 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.10       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/S (FA_X1)           0.14       1.52 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[11] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.52 r
+  ADD64_i_1/S[11] (RCA_GENERIC_NBIT16_0)                  0.00       1.52 r
+  ADD64_i_2/A[11] (RCA_GENERIC_NBIT16_2)                  0.00       1.52 r
+  ADD64_i_2/add_1_root_add_23_2/A[11] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.52 r
+  ADD64_i_2/add_1_root_add_23_2/U1_11/S (FA_X1)           0.12       1.64 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[11] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.64 f
+  ADD64_i_2/S[11] (RCA_GENERIC_NBIT16_2)                  0.00       1.64 f
+  ADD64_i_3/A[11] (RCA_GENERIC_NBIT16_1)                  0.00       1.64 f
+  ADD64_i_3/add_1_root_add_23_2/A[11] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.64 f
+  ADD64_i_3/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.10       1.75 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/S (FA_X1)           0.14       1.43 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[10] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.43 r
+  ADD64_i_1/S[10] (RCA_GENERIC_NBIT16_0)                  0.00       1.43 r
+  ADD64_i_2/A[10] (RCA_GENERIC_NBIT16_2)                  0.00       1.43 r
+  ADD64_i_2/add_1_root_add_23_2/A[10] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.43 r
+  ADD64_i_2/add_1_root_add_23_2/U1_10/S (FA_X1)           0.12       1.55 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[10] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.55 f
+  ADD64_i_2/S[10] (RCA_GENERIC_NBIT16_2)                  0.00       1.55 f
+  ADD64_i_3/A[10] (RCA_GENERIC_NBIT16_1)                  0.00       1.55 f
+  ADD64_i_3/add_1_root_add_23_2/A[10] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.55 f
+  ADD64_i_3/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.10       1.65 f
+  ADD64_i_3/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.75 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/S (FA_X1)            0.14       1.34 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[9] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.34 r
+  ADD64_i_1/S[9] (RCA_GENERIC_NBIT16_0)                   0.00       1.34 r
+  ADD64_i_2/A[9] (RCA_GENERIC_NBIT16_2)                   0.00       1.34 r
+  ADD64_i_2/add_1_root_add_23_2/A[9] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.34 r
+  ADD64_i_2/add_1_root_add_23_2/U1_9/S (FA_X1)            0.12       1.46 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[9] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.46 f
+  ADD64_i_2/S[9] (RCA_GENERIC_NBIT16_2)                   0.00       1.46 f
+  ADD64_i_3/A[9] (RCA_GENERIC_NBIT16_1)                   0.00       1.46 f
+  ADD64_i_3/add_1_root_add_23_2/A[9] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.46 f
+  ADD64_i_3/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.10       1.56 f
+  ADD64_i_3/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.65 f
+  ADD64_i_3/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.75 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/S (FA_X1)            0.14       1.25 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[8] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.25 r
+  ADD64_i_1/S[8] (RCA_GENERIC_NBIT16_0)                   0.00       1.25 r
+  ADD64_i_2/A[8] (RCA_GENERIC_NBIT16_2)                   0.00       1.25 r
+  ADD64_i_2/add_1_root_add_23_2/A[8] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.25 r
+  ADD64_i_2/add_1_root_add_23_2/U1_8/S (FA_X1)            0.12       1.37 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[8] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.37 f
+  ADD64_i_2/S[8] (RCA_GENERIC_NBIT16_2)                   0.00       1.37 f
+  ADD64_i_3/A[8] (RCA_GENERIC_NBIT16_1)                   0.00       1.37 f
+  ADD64_i_3/add_1_root_add_23_2/A[8] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.37 f
+  ADD64_i_3/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.10       1.47 f
+  ADD64_i_3/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.56 f
+  ADD64_i_3/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.65 f
+  ADD64_i_3/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.75 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/S (FA_X1)            0.14       1.16 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[7] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.16 r
+  ADD64_i_1/S[7] (RCA_GENERIC_NBIT16_0)                   0.00       1.16 r
+  ADD64_i_2/A[7] (RCA_GENERIC_NBIT16_2)                   0.00       1.16 r
+  ADD64_i_2/add_1_root_add_23_2/A[7] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.16 r
+  ADD64_i_2/add_1_root_add_23_2/U1_7/S (FA_X1)            0.12       1.27 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[7] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.27 f
+  ADD64_i_2/S[7] (RCA_GENERIC_NBIT16_2)                   0.00       1.27 f
+  ADD64_i_3/A[7] (RCA_GENERIC_NBIT16_1)                   0.00       1.27 f
+  ADD64_i_3/add_1_root_add_23_2/A[7] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.27 f
+  ADD64_i_3/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.10       1.38 f
+  ADD64_i_3/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.47 f
+  ADD64_i_3/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.56 f
+  ADD64_i_3/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.65 f
+  ADD64_i_3/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.75 f
+  ADD64_i_3/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.84 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.57 f
+  ADD64_i_1/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.66 f
+  ADD64_i_1/add_1_root_add_23_2/U1_14/S (FA_X1)           0.14       1.80 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[14] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.80 r
+  ADD64_i_1/S[14] (RCA_GENERIC_NBIT16_0)                  0.00       1.80 r
+  ADD64_i_2/A[14] (RCA_GENERIC_NBIT16_2)                  0.00       1.80 r
+  ADD64_i_2/add_1_root_add_23_2/A[14] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.80 r
+  ADD64_i_2/add_1_root_add_23_2/U1_14/S (FA_X1)           0.12       1.92 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[14] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.92 f
+  ADD64_i_2/S[14] (RCA_GENERIC_NBIT16_2)                  0.00       1.92 f
+  ADD64_i_3/A[14] (RCA_GENERIC_NBIT16_1)                  0.00       1.92 f
+  ADD64_i_3/add_1_root_add_23_2/A[14] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.92 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.10       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: B[1] (input port)
+  Endpoint: P[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT8     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[1] (in)                                               0.00       0.00 r
+  ENC_i_1/B[0] (BOOTH_ENCODER_3BIT_3)                     0.00       0.00 r
+  ENC_i_1/U10/ZN (INV_X1)                                 0.03       0.03 f
+  ENC_i_1/U9/Z (XOR2_X1)                                  0.08       0.11 f
+  ENC_i_1/U8/ZN (AOI21_X1)                                0.05       0.15 r
+  ENC_i_1/U3/ZN (INV_X1)                                  0.03       0.18 f
+  ENC_i_1/U4/ZN (INV_X2)                                  0.13       0.31 r
+  ENC_i_1/ENCODED[0] (BOOTH_ENCODER_3BIT_3)               0.00       0.31 r
+  MUX_i_1/S[0] (MUX51_GENERIC_NBIT16_3)                   0.00       0.31 r
+  MUX_i_1/mux00/SEL (MUX21_GENERIC_NBIT16_12)             0.00       0.31 r
+  MUX_i_1/mux00/U16/Z (MUX2_X1)                           0.10       0.41 f
+  MUX_i_1/mux00/Y[2] (MUX21_GENERIC_NBIT16_12)            0.00       0.41 f
+  MUX_i_1/mux1/B[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.41 f
+  MUX_i_1/mux1/U3/Z (MUX2_X1)                             0.06       0.48 f
+  MUX_i_1/mux1/Y[2] (MUX21_GENERIC_NBIT16_10)             0.00       0.48 f
+  MUX_i_1/mux2/B[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.48 f
+  MUX_i_1/mux2/U3/Z (MUX2_X1)                             0.07       0.55 f
+  MUX_i_1/mux2/Y[2] (MUX21_GENERIC_NBIT16_9)              0.00       0.55 f
+  MUX_i_1/O[2] (MUX51_GENERIC_NBIT16_3)                   0.00       0.55 f
+  ADD64_i_1/B[2] (RCA_GENERIC_NBIT16_0)                   0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/B[2] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       0.55 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.65 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.74 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.11 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.20 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.29 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.57 f
+  ADD64_i_1/add_1_root_add_23_2/U1_13/S (FA_X1)           0.14       1.71 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[13] (RCA_GENERIC_NBIT16_0_DW01_add_0)
+                                                          0.00       1.71 r
+  ADD64_i_1/S[13] (RCA_GENERIC_NBIT16_0)                  0.00       1.71 r
+  ADD64_i_2/A[13] (RCA_GENERIC_NBIT16_2)                  0.00       1.71 r
+  ADD64_i_2/add_1_root_add_23_2/A[13] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.71 r
+  ADD64_i_2/add_1_root_add_23_2/U1_13/S (FA_X1)           0.12       1.82 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[13] (RCA_GENERIC_NBIT16_2_DW01_add_0)
+                                                          0.00       1.82 f
+  ADD64_i_2/S[13] (RCA_GENERIC_NBIT16_2)                  0.00       1.82 f
+  ADD64_i_3/A[13] (RCA_GENERIC_NBIT16_1)                  0.00       1.82 f
+  ADD64_i_3/add_1_root_add_23_2/A[13] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       1.82 f
+  ADD64_i_3/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.10       1.93 f
+  ADD64_i_3/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       2.02 f
+  ADD64_i_3/add_1_root_add_23_2/U1_15/S (FA_X1)           0.13       2.15 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[15] (RCA_GENERIC_NBIT16_1_DW01_add_0)
+                                                          0.00       2.15 r
+  ADD64_i_3/S[15] (RCA_GENERIC_NBIT16_1)                  0.00       2.15 r
+  P[15] (out)                                             0.00       2.15 r
+  data arrival time                                                  2.15
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

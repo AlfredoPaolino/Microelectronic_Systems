@@ -1,0 +1,75 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'WRF_generic_M8_N8_F8_DATA_BIT32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : WRF_generic_M8_N8_F8_DATA_BIT32
+Version: F-2011.09-SP3
+Date   : Thu Apr 21 11:41:00 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG_MGMT_LOGIC/regSPILL_reg
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: PHYSICAL_REGFILE/REGS_reg[64][0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WRF_generic_M8_N8_F8_DATA_BIT32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_MGMT_LOGIC/regSPILL_reg/CK (DFF_X1)                 0.00 #     0.00 r
+  REG_MGMT_LOGIC/regSPILL_reg/QN (DFF_X1)                 0.11       0.11 r
+  REG_MGMT_LOGIC/U3/ZN (NAND2_X1)                         0.09       0.20 f
+  REG_MGMT_LOGIC/U11/ZN (INV_X1)                          0.09       0.29 r
+  REG_MGMT_LOGIC/U9/ZN (OAI22_X1)                         0.07       0.36 f
+  REG_MGMT_LOGIC/BASE_ADDR[0] (RML_M8_N8_F8)              0.00       0.36 f
+  ADDR_TRANSLATION_UNIT/CWP[0] (ATU_M8_N8_F8)             0.00       0.36 f
+  ADDR_TRANSLATION_UNIT/U44/ZN (AND2_X1)                  0.05       0.42 f
+  ADDR_TRANSLATION_UNIT/add_51/U1_1/CO (FA_X1)            0.09       0.50 f
+  ADDR_TRANSLATION_UNIT/add_51/U1_2/CO (FA_X1)            0.09       0.60 f
+  ADDR_TRANSLATION_UNIT/add_51/U1_3/CO (FA_X1)            0.09       0.69 f
+  ADDR_TRANSLATION_UNIT/add_51/U1_4/CO (FA_X1)            0.09       0.78 f
+  ADDR_TRANSLATION_UNIT/U23/ZN (INV_X1)                   0.04       0.82 r
+  ADDR_TRANSLATION_UNIT/U4/ZN (AOI221_X1)                 0.04       0.86 f
+  ADDR_TRANSLATION_UNIT/U3/ZN (NOR2_X1)                   0.10       0.96 r
+  ADDR_TRANSLATION_UNIT/ADDR_WR_o[6] (ATU_M8_N8_F8)       0.00       0.96 r
+  PHYSICAL_REGFILE/ADDR_WR[6] (physicalRF_M8_N8_F8_DATA_BIT32)
+                                                          0.00       0.96 r
+  PHYSICAL_REGFILE/U23/ZN (NAND3_X1)                      0.15       1.11 f
+  PHYSICAL_REGFILE/U2318/ZN (OAI21_X1)                    0.21       1.32 r
+  PHYSICAL_REGFILE/U2317/ZN (INV_X1)                      0.06       1.37 f
+  PHYSICAL_REGFILE/U1857/Z (BUF_X1)                       0.06       1.44 f
+  PHYSICAL_REGFILE/U132/ZN (INV_X1)                       0.14       1.58 r
+  PHYSICAL_REGFILE/U11441/ZN (OAI22_X1)                   0.06       1.64 f
+  PHYSICAL_REGFILE/REGS_reg[64][0]/D (DFF_X1)             0.01       1.65 f
+  data arrival time                                                  1.65
+
+  clock CLK (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  PHYSICAL_REGFILE/REGS_reg[64][0]/CK (DFF_X1)            0.00       2.00 r
+  library setup time                                     -0.05       1.95
+  data required time                                                 1.95
+  --------------------------------------------------------------------------
+  data required time                                                 1.95
+  data arrival time                                                 -1.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.31
+
+
+1

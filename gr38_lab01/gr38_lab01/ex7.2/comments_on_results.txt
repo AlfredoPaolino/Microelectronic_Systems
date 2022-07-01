@@ -1,0 +1,9 @@
+Lab1 Comments
+Students: Crescenzo Diamante Simone (s295783), Paolino Alfredo(s295152), Petrolo Vincenzo (s295043)
+1) No further comments needed.
+2) The files on simulation/synthesis directory differs because timings are removed during synthesis phase. This was done for each entity involved in the requirements.
+3) We tested both active HIGH and active low reset signal and it turned out that the latter is 20% more power efficient than the former approach. Nonetheless, the latter shows 10% less area impact. 
+4) We synthetized both asynchronous and synchronous configurations noticing that the result was always an asynchronous Flip-flop mapped on DFFR_X1 component of "Nangate" library.
+5) In the RCA timing report, we can see a difference of 1ns delay between behavioral and structural description.
+6) We uniformed the ENABLE convention, using active low for all the entities described thereafter. Furthermore, we created a bash script to automate the compilation process.
+7) We used the tcl script to automate synthesis and generate report files.

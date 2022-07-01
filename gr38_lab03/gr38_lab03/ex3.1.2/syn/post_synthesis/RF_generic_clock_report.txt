@@ -1,0 +1,22 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'RF_generic_ADDR_BIT5_DATA_BIT32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : RF_generic_ADDR_BIT5_DATA_BIT32
+Version: F-2011.09-SP3
+Date   : Thu Apr  7 09:37:20 2022
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              2.00   {0 1}                         {CLK}
+--------------------------------------------------------------------------------
+1

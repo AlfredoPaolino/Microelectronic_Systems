@@ -1,0 +1,6 @@
+Question 4
+	
+The circuit in sketch 3.4 takes input A serially and rotates it left
+ (MSB is put into A(0) before being fed to the adder).
+Input B is loaded in parallel into the PIPO register, then it is fed to the adder.
+PISO register will store the sum result and will output it in serial.

@@ -1,0 +1,9 @@
+X8 gate has a much stronger driving strength w.r.t. X1, this means that, in case of high outputs loads, an X8 gate will be faster in bringing the output to the desired value.
+In order to do this, the power disspiation of an X8 cell will be higher w.r.t an X1 cell, and this is a disadvantage for sure.
+However, using a X1 cell has its downsides, in fact the cell will take more time to completely charge the output capacitance, thus the transistors will stay out of saturation or cutoff region for a longer period of time, leading to an higher leakage current.
+
+LL gates, w.r.t. HS gates, are optimized for reducing leakage current. By superposing all the waveforms, we can clearly see how the overall current in the circuit is reduced when using LL gates. The downside of using LL gates is in terms of delay, in fact a lower current means also lower performance.
+A good tradeoff could be to use HS gates in critical points (points part of critical path with low slack), while using LL gates in all those points that are not critical (endpoints or points with a small fanout).
+LL total power dissipation = 4.4509E-10 WATTS
+HS total power dissipation = 6.7908E-09 WATTS
+=> using LL gates we consume 16 times less current

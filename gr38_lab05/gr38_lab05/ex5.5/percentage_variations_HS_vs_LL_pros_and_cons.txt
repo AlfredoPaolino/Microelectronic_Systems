@@ -1,0 +1,42 @@
+Percentage variations of significant measures for LL and HS nand gate.
+Note: percentage signs are computed from the LL perspective.
+
+RNAND_LL        =  7.1394E-11   targ=  2.2478E-09     trig=  2.1764E-09
+RNAND_HS        =  6.7604E-11   targ=  2.2288E-09     trig=  2.1612E-09
+RNAND%_VAR = +5.26%
+
+FNAND_LL        =  6.3376E-11   targ=  1.2185E-09     trig=  1.1552E-09
+FNAND_HA        =  6.8830E-11   targ=  1.2074E-09     trig=  1.1385E-09
+FNAND%_VAR = +7.92%
+
+NANDDELAYHL_LL  =  3.1521E-11   targ=  1.1945E-09     trig=  1.1630E-09
+NANDDELAYHL_HS  =  2.0851E-11   targ=  1.1839E-09     trig=  1.1630E-09
+NANDDELAYHL%_VAR = +51.17%
+
+NANDDELAYLH_LL  =  5.2555E-11   targ=  2.2156E-09     trig=  2.1630E-09
+NANDDELAYLH_HS  =  3.8286E-11   targ=  2.2013E-09     trig=  2.1630E-09
+NANDDELAYLH%_VAR = +37.27%
+
+MAXIVDDF_LL     = -1.9800E-05     at=  1.1839E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXIVDDF_HS     = -4.7680E-05     at=  1.1709E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXIVDDF%_VAR = -58.47%
+
+MAXIGNDF_LL     =  5.1755E-05     at=  1.2049E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXIGNDF_HS     =  7.7056E-05     at=  1.1909E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXIGNDF%_VAR = -32.83%
+
+MAXILOADF_LL    = -1.1144E-06     at=  1.2075E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXILOADF_HS    = -1.2504E-06     at=  1.1939E-09  from=  1.0000E-09     to=  2.0000E-09
+MAXILOADF%_VAR = -10.88%
+
+MAXIVDDR_LL     = -4.2223E-05     at=  2.2181E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXIVDDR_HS     = -7.0423E-05     at=  2.2003E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXIVDDR%_VAR = -40.04%
+
+MAXIGNDR_LL     =  1.6987E-05     at=  2.1803E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXIGNDR_HS     =  4.5692E-05     at=  2.1783E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXIGNDR%_VAR = -62.82%
+
+MAXILOADR_LL    =  8.9711E-07     at=  2.2228E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXILOADR_HS    =  1.1429E-06     at=  2.2076E-09  from=  2.0000E-09     to=  3.0000E-09
+MAXILOADR%_VAR = -21.51%

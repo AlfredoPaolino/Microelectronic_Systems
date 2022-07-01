@@ -1,0 +1,30 @@
+NAND2HS
+Cload=0.05fF
+  MAXIVDDF     = -4.7680E-05     at=  1.1709E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIGNDF     =  7.7056E-05     at=  1.1909E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF    = -1.2504E-06     at=  1.1939E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR     = -7.0423E-05     at=  2.2003E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR     =  4.5692E-05     at=  2.1783E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXILOADR    =  1.1429E-06     at=  2.2076E-09  from=  2.0000E-09     to=  3.0000E-09
+Cload=50fF
+  MAXIVDDF     = -1.1039E-05     at=  1.1944E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIGNDF     =  2.4077E-04     at=  1.3260E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF    = -2.3042E-04     at=  1.3271E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR     = -2.0919E-04     at=  2.3260E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR     =  1.2571E-05     at=  2.1949E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXILOADR    =  1.9972E-04     at=  2.3271E-09  from=  2.0000E-09     to=  3.0000E-09
+NAND2HSX8
+Cload=0.05fF
+  MAXIVDDF     = -4.1041E-04     at=  1.1716E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIGNDF     =  6.3732E-04     at=  1.1876E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF    = -1.4246E-06     at=  1.1896E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR     = -5.5277E-04     at=  2.1926E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR     =  3.7896E-04     at=  2.1736E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXILOADR    =  1.2887E-06     at=  2.1997E-09  from=  2.0000E-09     to=  3.0000E-09
+Cload=50fF
+  MAXIVDDF     = -2.7304E-04     at=  1.1760E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIGNDF     =  1.0164E-03     at=  1.2275E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXILOADF    = -7.2917E-04     at=  1.2295E-09  from=  1.0000E-09     to=  2.0000E-09
+  MAXIVDDR     = -8.8259E-04     at=  2.2342E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXIGNDR     =  2.7682E-04     at=  2.1777E-09  from=  2.0000E-09     to=  3.0000E-09
+  MAXILOADR    =  6.5614E-04     at=  2.2363E-09  from=  2.0000E-09     to=  3.0000E-09

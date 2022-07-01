@@ -1,0 +1,8 @@
+The .measure instruction is a SPICE fuctionality which allows to measure the quantities
+	of interest in a rigorous way, since using cursors provided in the Eldo's GUI
+	environment lack of precision and placing them is a very time consuming task.
+The measurement is started in the point indicated by the TRIG instruction (followed by the
+	measure of interest together with the value of intereset and the RISE/FALL property), and it ends at the point
+	indicated by the TARG instruction (always given measure, value, RISE/FALL property of interest).
+Each measure is characterized by a label, which will be used to store the computed measurement
+	within the .chi file containing the SPICE simulation results.

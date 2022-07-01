@@ -1,0 +1,306 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'BOOTHMUL_NBIT32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : BOOTHMUL_NBIT32
+Version: F-2011.09-SP3
+Date   : Tue Mar 29 18:07:27 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: P[63] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL_NBIT32    5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  B[0] (in)                                               0.00       0.00 f
+  ENC_0_0/B[1] (BOOTH_ENCODER_3BIT_4)                     0.00       0.00 f
+  ENC_0_0/U7/Z (XOR2_X1)                                  0.11       0.11 r
+  ENC_0_0/U6/ZN (AOI21_X1)                                0.08       0.20 f
+  ENC_0_0/ENCODED[0] (BOOTH_ENCODER_3BIT_4)               0.00       0.20 f
+  MUX_00_0/S[0] (MUX51_GENERIC_NBIT64_0)                  0.00       0.20 f
+  MUX_00_0/mux00/SEL (MUX21_GENERIC_NBIT64_0)             0.00       0.20 f
+  MUX_00_0/mux00/U4/Z (CLKBUF_X1)                         0.13       0.33 f
+  MUX_00_0/mux00/U48/Z (MUX2_X1)                          0.09       0.42 f
+  MUX_00_0/mux00/Y[2] (MUX21_GENERIC_NBIT64_0)            0.00       0.42 f
+  MUX_00_0/mux1/B[2] (MUX21_GENERIC_NBIT64_62)            0.00       0.42 f
+  MUX_00_0/mux1/U43/Z (MUX2_X1)                           0.07       0.49 f
+  MUX_00_0/mux1/Y[2] (MUX21_GENERIC_NBIT64_62)            0.00       0.49 f
+  MUX_00_0/mux2/B[2] (MUX21_GENERIC_NBIT64_61)            0.00       0.49 f
+  MUX_00_0/mux2/U3/Z (MUX2_X1)                            0.07       0.56 f
+  MUX_00_0/mux2/Y[2] (MUX21_GENERIC_NBIT64_61)            0.00       0.56 f
+  MUX_00_0/O[2] (MUX51_GENERIC_NBIT64_0)                  0.00       0.56 f
+  ADD64_i_1/A[2] (RCA_GENERIC_NBIT64_0)                   0.00       0.56 f
+  ADD64_i_1/add_1_root_add_23_2/A[2] (RCA_GENERIC_NBIT64_0_DW01_add_0)
+                                                          0.00       0.56 f
+  ADD64_i_1/add_1_root_add_23_2/U1_2/CO (FA_X1)           0.10       0.66 f
+  ADD64_i_1/add_1_root_add_23_2/U1_3/CO (FA_X1)           0.09       0.75 f
+  ADD64_i_1/add_1_root_add_23_2/U1_4/CO (FA_X1)           0.09       0.84 f
+  ADD64_i_1/add_1_root_add_23_2/U1_5/CO (FA_X1)           0.09       0.93 f
+  ADD64_i_1/add_1_root_add_23_2/U1_6/CO (FA_X1)           0.09       1.02 f
+  ADD64_i_1/add_1_root_add_23_2/U1_7/CO (FA_X1)           0.09       1.12 f
+  ADD64_i_1/add_1_root_add_23_2/U1_8/CO (FA_X1)           0.09       1.21 f
+  ADD64_i_1/add_1_root_add_23_2/U1_9/CO (FA_X1)           0.09       1.30 f
+  ADD64_i_1/add_1_root_add_23_2/U1_10/CO (FA_X1)          0.09       1.39 f
+  ADD64_i_1/add_1_root_add_23_2/U1_11/CO (FA_X1)          0.09       1.48 f
+  ADD64_i_1/add_1_root_add_23_2/U1_12/CO (FA_X1)          0.09       1.57 f
+  ADD64_i_1/add_1_root_add_23_2/U1_13/CO (FA_X1)          0.09       1.67 f
+  ADD64_i_1/add_1_root_add_23_2/U1_14/CO (FA_X1)          0.09       1.76 f
+  ADD64_i_1/add_1_root_add_23_2/U1_15/CO (FA_X1)          0.09       1.85 f
+  ADD64_i_1/add_1_root_add_23_2/U1_16/CO (FA_X1)          0.09       1.94 f
+  ADD64_i_1/add_1_root_add_23_2/U1_17/CO (FA_X1)          0.09       2.03 f
+  ADD64_i_1/add_1_root_add_23_2/U1_18/CO (FA_X1)          0.09       2.12 f
+  ADD64_i_1/add_1_root_add_23_2/U1_19/CO (FA_X1)          0.09       2.22 f
+  ADD64_i_1/add_1_root_add_23_2/U1_20/CO (FA_X1)          0.09       2.31 f
+  ADD64_i_1/add_1_root_add_23_2/U1_21/CO (FA_X1)          0.09       2.40 f
+  ADD64_i_1/add_1_root_add_23_2/U1_22/CO (FA_X1)          0.09       2.49 f
+  ADD64_i_1/add_1_root_add_23_2/U1_23/CO (FA_X1)          0.09       2.58 f
+  ADD64_i_1/add_1_root_add_23_2/U1_24/CO (FA_X1)          0.09       2.67 f
+  ADD64_i_1/add_1_root_add_23_2/U1_25/CO (FA_X1)          0.09       2.76 f
+  ADD64_i_1/add_1_root_add_23_2/U1_26/CO (FA_X1)          0.09       2.86 f
+  ADD64_i_1/add_1_root_add_23_2/U1_27/CO (FA_X1)          0.09       2.95 f
+  ADD64_i_1/add_1_root_add_23_2/U1_28/CO (FA_X1)          0.09       3.04 f
+  ADD64_i_1/add_1_root_add_23_2/U1_29/CO (FA_X1)          0.09       3.13 f
+  ADD64_i_1/add_1_root_add_23_2/U1_30/CO (FA_X1)          0.09       3.22 f
+  ADD64_i_1/add_1_root_add_23_2/U1_31/CO (FA_X1)          0.09       3.31 f
+  ADD64_i_1/add_1_root_add_23_2/U1_32/CO (FA_X1)          0.09       3.41 f
+  ADD64_i_1/add_1_root_add_23_2/U1_33/CO (FA_X1)          0.09       3.50 f
+  ADD64_i_1/add_1_root_add_23_2/U1_34/CO (FA_X1)          0.09       3.59 f
+  ADD64_i_1/add_1_root_add_23_2/U1_35/CO (FA_X1)          0.09       3.68 f
+  ADD64_i_1/add_1_root_add_23_2/U1_36/CO (FA_X1)          0.09       3.77 f
+  ADD64_i_1/add_1_root_add_23_2/U1_37/CO (FA_X1)          0.09       3.86 f
+  ADD64_i_1/add_1_root_add_23_2/U1_38/CO (FA_X1)          0.09       3.96 f
+  ADD64_i_1/add_1_root_add_23_2/U1_39/CO (FA_X1)          0.09       4.05 f
+  ADD64_i_1/add_1_root_add_23_2/U1_40/CO (FA_X1)          0.09       4.14 f
+  ADD64_i_1/add_1_root_add_23_2/U1_41/CO (FA_X1)          0.09       4.23 f
+  ADD64_i_1/add_1_root_add_23_2/U1_42/CO (FA_X1)          0.09       4.32 f
+  ADD64_i_1/add_1_root_add_23_2/U1_43/CO (FA_X1)          0.09       4.41 f
+  ADD64_i_1/add_1_root_add_23_2/U1_44/CO (FA_X1)          0.09       4.50 f
+  ADD64_i_1/add_1_root_add_23_2/U1_45/CO (FA_X1)          0.09       4.60 f
+  ADD64_i_1/add_1_root_add_23_2/U1_46/CO (FA_X1)          0.09       4.69 f
+  ADD64_i_1/add_1_root_add_23_2/U1_47/CO (FA_X1)          0.09       4.78 f
+  ADD64_i_1/add_1_root_add_23_2/U1_48/CO (FA_X1)          0.09       4.87 f
+  ADD64_i_1/add_1_root_add_23_2/U1_49/CO (FA_X1)          0.09       4.96 f
+  ADD64_i_1/add_1_root_add_23_2/U1_50/CO (FA_X1)          0.09       5.05 f
+  ADD64_i_1/add_1_root_add_23_2/U1_51/CO (FA_X1)          0.09       5.15 f
+  ADD64_i_1/add_1_root_add_23_2/U1_52/CO (FA_X1)          0.09       5.24 f
+  ADD64_i_1/add_1_root_add_23_2/U1_53/CO (FA_X1)          0.09       5.33 f
+  ADD64_i_1/add_1_root_add_23_2/U1_54/CO (FA_X1)          0.09       5.42 f
+  ADD64_i_1/add_1_root_add_23_2/U1_55/CO (FA_X1)          0.09       5.51 f
+  ADD64_i_1/add_1_root_add_23_2/U1_56/S (FA_X1)           0.14       5.65 r
+  ADD64_i_1/add_1_root_add_23_2/SUM[56] (RCA_GENERIC_NBIT64_0_DW01_add_0)
+                                                          0.00       5.65 r
+  ADD64_i_1/S[56] (RCA_GENERIC_NBIT64_0)                  0.00       5.65 r
+  ADD64_i_2/A[56] (RCA_GENERIC_NBIT64_14)                 0.00       5.65 r
+  ADD64_i_2/add_1_root_add_23_2/A[56] (RCA_GENERIC_NBIT64_14_DW01_add_0)
+                                                          0.00       5.65 r
+  ADD64_i_2/add_1_root_add_23_2/U1_56/S (FA_X1)           0.12       5.77 f
+  ADD64_i_2/add_1_root_add_23_2/SUM[56] (RCA_GENERIC_NBIT64_14_DW01_add_0)
+                                                          0.00       5.77 f
+  ADD64_i_2/S[56] (RCA_GENERIC_NBIT64_14)                 0.00       5.77 f
+  ADD64_i_3/A[56] (RCA_GENERIC_NBIT64_13)                 0.00       5.77 f
+  ADD64_i_3/add_1_root_add_23_2/A[56] (RCA_GENERIC_NBIT64_13_DW01_add_0)
+                                                          0.00       5.77 f
+  ADD64_i_3/add_1_root_add_23_2/U1_56/CO (FA_X1)          0.10       5.87 f
+  ADD64_i_3/add_1_root_add_23_2/U1_57/S (FA_X1)           0.14       6.01 r
+  ADD64_i_3/add_1_root_add_23_2/SUM[57] (RCA_GENERIC_NBIT64_13_DW01_add_0)
+                                                          0.00       6.01 r
+  ADD64_i_3/S[57] (RCA_GENERIC_NBIT64_13)                 0.00       6.01 r
+  ADD64_i_4/A[57] (RCA_GENERIC_NBIT64_12)                 0.00       6.01 r
+  ADD64_i_4/add_1_root_add_23_2/A[57] (RCA_GENERIC_NBIT64_12_DW01_add_0)
+                                                          0.00       6.01 r
+  ADD64_i_4/add_1_root_add_23_2/U1_57/S (FA_X1)           0.12       6.13 f
+  ADD64_i_4/add_1_root_add_23_2/SUM[57] (RCA_GENERIC_NBIT64_12_DW01_add_0)
+                                                          0.00       6.13 f
+  ADD64_i_4/S[57] (RCA_GENERIC_NBIT64_12)                 0.00       6.13 f
+  ADD64_i_5/A[57] (RCA_GENERIC_NBIT64_11)                 0.00       6.13 f
+  ADD64_i_5/add_1_root_add_23_2/A[57] (RCA_GENERIC_NBIT64_11_DW01_add_0)
+                                                          0.00       6.13 f
+  ADD64_i_5/add_1_root_add_23_2/U1_57/CO (FA_X1)          0.10       6.23 f
+  ADD64_i_5/add_1_root_add_23_2/U1_58/S (FA_X1)           0.14       6.37 r
+  ADD64_i_5/add_1_root_add_23_2/SUM[58] (RCA_GENERIC_NBIT64_11_DW01_add_0)
+                                                          0.00       6.37 r
+  ADD64_i_5/S[58] (RCA_GENERIC_NBIT64_11)                 0.00       6.37 r
+  ADD64_i_6/A[58] (RCA_GENERIC_NBIT64_10)                 0.00       6.37 r
+  ADD64_i_6/add_1_root_add_23_2/A[58] (RCA_GENERIC_NBIT64_10_DW01_add_0)
+                                                          0.00       6.37 r
+  ADD64_i_6/add_1_root_add_23_2/U1_58/S (FA_X1)           0.12       6.49 f
+  ADD64_i_6/add_1_root_add_23_2/SUM[58] (RCA_GENERIC_NBIT64_10_DW01_add_0)
+                                                          0.00       6.49 f
+  ADD64_i_6/S[58] (RCA_GENERIC_NBIT64_10)                 0.00       6.49 f
+  ADD64_i_7/A[58] (RCA_GENERIC_NBIT64_9)                  0.00       6.49 f
+  ADD64_i_7/add_1_root_add_23_2/A[58] (RCA_GENERIC_NBIT64_9_DW01_add_0)
+                                                          0.00       6.49 f
+  ADD64_i_7/add_1_root_add_23_2/U1_58/CO (FA_X1)          0.10       6.59 f
+  ADD64_i_7/add_1_root_add_23_2/U1_59/S (FA_X1)           0.14       6.73 r
+  ADD64_i_7/add_1_root_add_23_2/SUM[59] (RCA_GENERIC_NBIT64_9_DW01_add_0)
+                                                          0.00       6.73 r
+  ADD64_i_7/S[59] (RCA_GENERIC_NBIT64_9)                  0.00       6.73 r
+  ADD64_i_8/A[59] (RCA_GENERIC_NBIT64_8)                  0.00       6.73 r
+  ADD64_i_8/add_1_root_add_23_2/A[59] (RCA_GENERIC_NBIT64_8_DW01_add_0)
+                                                          0.00       6.73 r
+  ADD64_i_8/add_1_root_add_23_2/U1_59/S (FA_X1)           0.12       6.85 f
+  ADD64_i_8/add_1_root_add_23_2/SUM[59] (RCA_GENERIC_NBIT64_8_DW01_add_0)
+                                                          0.00       6.85 f
+  ADD64_i_8/S[59] (RCA_GENERIC_NBIT64_8)                  0.00       6.85 f
+  ADD64_i_9/A[59] (RCA_GENERIC_NBIT64_7)                  0.00       6.85 f
+  ADD64_i_9/add_1_root_add_23_2/A[59] (RCA_GENERIC_NBIT64_7_DW01_add_0)
+                                                          0.00       6.85 f
+  ADD64_i_9/add_1_root_add_23_2/U1_59/CO (FA_X1)          0.10       6.95 f
+  ADD64_i_9/add_1_root_add_23_2/U1_60/S (FA_X1)           0.14       7.09 r
+  ADD64_i_9/add_1_root_add_23_2/SUM[60] (RCA_GENERIC_NBIT64_7_DW01_add_0)
+                                                          0.00       7.09 r
+  ADD64_i_9/S[60] (RCA_GENERIC_NBIT64_7)                  0.00       7.09 r
+  ADD64_i_10/A[60] (RCA_GENERIC_NBIT64_6)                 0.00       7.09 r
+  ADD64_i_10/add_1_root_add_23_2/A[60] (RCA_GENERIC_NBIT64_6_DW01_add_0)
+                                                          0.00       7.09 r
+  ADD64_i_10/add_1_root_add_23_2/U1_60/S (FA_X1)          0.12       7.20 f
+  ADD64_i_10/add_1_root_add_23_2/SUM[60] (RCA_GENERIC_NBIT64_6_DW01_add_0)
+                                                          0.00       7.20 f
+  ADD64_i_10/S[60] (RCA_GENERIC_NBIT64_6)                 0.00       7.20 f
+  ADD64_i_11/A[60] (RCA_GENERIC_NBIT64_5)                 0.00       7.20 f
+  ADD64_i_11/add_1_root_add_23_2/A[60] (RCA_GENERIC_NBIT64_5_DW01_add_0)
+                                                          0.00       7.20 f
+  ADD64_i_11/add_1_root_add_23_2/U1_60/CO (FA_X1)         0.10       7.31 f
+  ADD64_i_11/add_1_root_add_23_2/U1_61/S (FA_X1)          0.14       7.45 r
+  ADD64_i_11/add_1_root_add_23_2/SUM[61] (RCA_GENERIC_NBIT64_5_DW01_add_0)
+                                                          0.00       7.45 r
+  ADD64_i_11/S[61] (RCA_GENERIC_NBIT64_5)                 0.00       7.45 r
+  ADD64_i_12/A[61] (RCA_GENERIC_NBIT64_4)                 0.00       7.45 r
+  ADD64_i_12/add_1_root_add_23_2/A[61] (RCA_GENERIC_NBIT64_4_DW01_add_0)
+                                                          0.00       7.45 r
+  ADD64_i_12/add_1_root_add_23_2/U1_61/S (FA_X1)          0.12       7.56 f
+  ADD64_i_12/add_1_root_add_23_2/SUM[61] (RCA_GENERIC_NBIT64_4_DW01_add_0)
+                                                          0.00       7.56 f
+  ADD64_i_12/S[61] (RCA_GENERIC_NBIT64_4)                 0.00       7.56 f
+  ADD64_i_13/A[61] (RCA_GENERIC_NBIT64_3)                 0.00       7.56 f
+  ADD64_i_13/add_1_root_add_23_2/A[61] (RCA_GENERIC_NBIT64_3_DW01_add_0)
+                                                          0.00       7.56 f
+  ADD64_i_13/add_1_root_add_23_2/U1_61/CO (FA_X1)         0.10       7.67 f
+  ADD64_i_13/add_1_root_add_23_2/U1_62/S (FA_X1)          0.14       7.81 r
+  ADD64_i_13/add_1_root_add_23_2/SUM[62] (RCA_GENERIC_NBIT64_3_DW01_add_0)
+                                                          0.00       7.81 r
+  ADD64_i_13/S[62] (RCA_GENERIC_NBIT64_3)                 0.00       7.81 r
+  ADD64_i_14/A[62] (RCA_GENERIC_NBIT64_2)                 0.00       7.81 r
+  ADD64_i_14/add_1_root_add_23_2/A[62] (RCA_GENERIC_NBIT64_2_DW01_add_0)
+                                                          0.00       7.81 r
+  ADD64_i_14/add_1_root_add_23_2/U1_62/S (FA_X1)          0.12       7.92 f
+  ADD64_i_14/add_1_root_add_23_2/SUM[62] (RCA_GENERIC_NBIT64_2_DW01_add_0)
+                                                          0.00       7.92 f
+  ADD64_i_14/S[62] (RCA_GENERIC_NBIT64_2)                 0.00       7.92 f
+  ADD64_i_15/A[62] (RCA_GENERIC_NBIT64_1)                 0.00       7.92 f
+  ADD64_i_15/add_1_root_add_23_2/A[62] (RCA_GENERIC_NBIT64_1_DW01_add_0)
+                                                          0.00       7.92 f
+  ADD64_i_15/add_1_root_add_23_2/U1_62/CO (FA_X1)         0.10       8.03 f
+  ADD64_i_15/add_1_root_add_23_2/U1_63/S (FA_X1)          0.13       8.15 r
+  ADD64_i_15/add_1_root_add_23_2/SUM[63] (RCA_GENERIC_NBIT64_1_DW01_add_0)
+                                                          0.00       8.15 r
+  ADD64_i_15/S[63] (RCA_GENERIC_NBIT64_1)                 0.00       8.15 r
+  P[63] (out)                                             0.00       8.16 r
+  data arrival time                                                  8.16
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : BOOTHMUL_NBIT32
+Version: F-2011.09-SP3
+Date   : Tue Mar 29 18:07:27 2022
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          128
+Number of nets:                          2199
+Number of cells:                           86
+Number of combinational cells:             38
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                         38
+Number of references:                      50
+
+Combinational area:       12146.357993
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          12146.357993
+Total area:                 undefined
+1
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : BOOTHMUL_NBIT32
+Version: F-2011.09-SP3
+Date   : Tue Mar 29 18:07:31 2022
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+BOOTHMUL_NBIT32        5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   5.0923 mW   (59%)
+  Net Switching Power  =   3.4754 mW   (41%)
+                         ---------
+Total Dynamic Power    =   8.5677 mW  (100%)
+
+Cell Leakage Power     = 212.2773 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.0923e+03        3.4754e+03        2.1228e+05        8.7799e+03  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          5.0923e+03 uW     3.4754e+03 uW     2.1228e+05 nW     8.7799e+03 uW
+1

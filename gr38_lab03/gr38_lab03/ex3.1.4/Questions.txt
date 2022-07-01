@@ -1,0 +1,4 @@
+Question 3
+-We can observe from the timing report of Windowed Register File that the critical path
+	timing is higher than the classic RF. The reason can be attributed to the logic needed
+	to manage the windows, and the spilling/filling to/from memory. 

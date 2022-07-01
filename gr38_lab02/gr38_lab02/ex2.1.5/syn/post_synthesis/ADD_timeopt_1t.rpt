@@ -1,0 +1,89 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : adder_generic_NBIT32_NBIT_PER_BLOCK4_1
+Version: F-2011.09-SP3
+Date   : Fri Mar 25 15:23:28 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Cin (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  adder_generic_NBIT32_NBIT_PER_BLOCK4_1
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  Cin (in)                                                0.00       0.00 f
+  U64/Z (XOR2_X1)                                         0.11       0.11 f
+  carry/B[0] (CLA_NBIT32_NBIT_PER_BLOCK4)                 0.00       0.11 f
+  carry/PG_0_0/bi (pgb_0)                                 0.00       0.11 f
+  carry/PG_0_0/U1/Z (XOR2_X1)                             0.08       0.19 f
+  carry/PG_0_0/p (pgb_0)                                  0.00       0.19 f
+  carry/G_0_0/Pik (G_0)                                   0.00       0.19 f
+  carry/G_0_0/U2/ZN (AOI21_X1)                            0.04       0.23 r
+  carry/G_0_0/U1/ZN (INV_X1)                              0.02       0.26 f
+  carry/G_0_0/Gij (G_0)                                   0.00       0.26 f
+  carry/INITIAL_G_i_1/Gdkj (G_9)                          0.00       0.26 f
+  carry/INITIAL_G_i_1/U2/ZN (AOI21_X1)                    0.04       0.30 r
+  carry/INITIAL_G_i_1/U1/ZN (INV_X1)                      0.02       0.32 f
+  carry/INITIAL_G_i_1/Gij (G_9)                           0.00       0.32 f
+  carry/INITIAL_G_i_2/Gdkj (G_8)                          0.00       0.32 f
+  carry/INITIAL_G_i_2/U2/ZN (AOI21_X1)                    0.04       0.37 r
+  carry/INITIAL_G_i_2/U1/ZN (INV_X1)                      0.04       0.41 f
+  carry/INITIAL_G_i_2/Gij (G_8)                           0.00       0.41 f
+  carry/FINAL_G_i_2/Gdkj (G_7)                            0.00       0.41 f
+  carry/FINAL_G_i_2/U2/ZN (AOI21_X1)                      0.05       0.46 r
+  carry/FINAL_G_i_2/U1/ZN (INV_X1)                        0.04       0.50 f
+  carry/FINAL_G_i_2/Gij (G_7)                             0.00       0.50 f
+  carry/FINAL_G_i_4/Gdkj (G_5)                            0.00       0.50 f
+  carry/FINAL_G_i_4/U2/ZN (AOI21_X1)                      0.06       0.56 r
+  carry/FINAL_G_i_4/U1/ZN (INV_X1)                        0.05       0.61 f
+  carry/FINAL_G_i_4/Gij (G_5)                             0.00       0.61 f
+  carry/FINAL_G_i_7/Gdkj (G_2)                            0.00       0.61 f
+  carry/FINAL_G_i_7/U2/ZN (AOI21_X1)                      0.06       0.67 r
+  carry/FINAL_G_i_7/U1/ZN (INV_X1)                        0.04       0.71 f
+  carry/FINAL_G_i_7/Gij (G_2)                             0.00       0.71 f
+  carry/Co[6] (CLA_NBIT32_NBIT_PER_BLOCK4)                0.00       0.71 f
+  sum/Ci[7] (SUM_GENERATOR_GENERIC_NBIT_PER_BLOCK4_NBLOCKS8)
+                                                          0.00       0.71 f
+  sum/CARRYSELBLOCK_i_8/C_IN (CARRY_SELECT_BLOCK_GENERIC_NBIT4_1)
+                                                          0.00       0.71 f
+  sum/CARRYSELBLOCK_i_8/MUX/SEL (MUX21_GENERIC_NBIT4_1)
+                                                          0.00       0.71 f
+  sum/CARRYSELBLOCK_i_8/MUX/INV/A (IV_1)                  0.00       0.71 f
+  sum/CARRYSELBLOCK_i_8/MUX/INV/U1/ZN (INV_X1)            0.05       0.76 r
+  sum/CARRYSELBLOCK_i_8/MUX/INV/Y (IV_1)                  0.00       0.76 r
+  sum/CARRYSELBLOCK_i_8/MUX/B_NAND_i_3/A (ND2_2)          0.00       0.76 r
+  sum/CARRYSELBLOCK_i_8/MUX/B_NAND_i_3/U1/ZN (NAND2_X1)
+                                                          0.03       0.79 f
+  sum/CARRYSELBLOCK_i_8/MUX/B_NAND_i_3/Y (ND2_2)          0.00       0.79 f
+  sum/CARRYSELBLOCK_i_8/MUX/NAND_OUT_i_3/B (ND2_1)        0.00       0.79 f
+  sum/CARRYSELBLOCK_i_8/MUX/NAND_OUT_i_3/U1/ZN (NAND2_X1)
+                                                          0.02       0.81 r
+  sum/CARRYSELBLOCK_i_8/MUX/NAND_OUT_i_3/Y (ND2_1)        0.00       0.81 r
+  sum/CARRYSELBLOCK_i_8/MUX/Y[3] (MUX21_GENERIC_NBIT4_1)
+                                                          0.00       0.81 r
+  sum/CARRYSELBLOCK_i_8/S[3] (CARRY_SELECT_BLOCK_GENERIC_NBIT4_1)
+                                                          0.00       0.81 r
+  sum/S[31] (SUM_GENERATOR_GENERIC_NBIT_PER_BLOCK4_NBLOCKS8)
+                                                          0.00       0.81 r
+  S[31] (out)                                             0.00       0.81 r
+  data arrival time                                                  0.81
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

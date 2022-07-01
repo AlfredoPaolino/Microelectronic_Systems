@@ -1,0 +1,3 @@
+The SUM.spf file contains the SPICE netlist of the whole circuit parasitics capacitances and resistances.
+The SUM.spef file contains the nets parasitics capacitances and the net with highest capacitance is: *D_NET *267 0.162311
+The .setres and .setload files are used to set load capacitance and resistance for back-annotation step in synopsis.

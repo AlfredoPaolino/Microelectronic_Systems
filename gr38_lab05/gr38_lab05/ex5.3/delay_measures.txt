@@ -1,0 +1,59 @@
+Capacitance: 0.004
+Input transition: 0.0048
+Delays: HL=1.04e-11 LH=1.14e-11
+Input transition: 0.1088
+Delays: HL=1.82e-11 LH=2.55e-11
+Input transition: 0.2608
+Delays: HL=2.05e-11 LH=3.79e-11
+Input transition: 0.5248
+Delays: HL=1.94e-11 LH=5.40e-11
+Input transition: 1
+Delays: HL=1.24e-11 LH=7.72e-11
+
+Capacitance: 0.012
+Input transition: 0.0048
+Delays: HL=1.04e-11 LH=1.14e-11
+Input transition: 0.1088
+Delays: HL=1.83e-11 LH=2.56e-11
+Input transition: 0.2608
+Delays: HL=2.05e-11 LH=3.80e-11
+Input transition: 0.5248
+Delays: HL=1.95e-11 LH=5.41e-11
+Input transition: 1
+Delays: HL=1.25e-11 LH=7.73e-11
+
+Capacitance: 0.028
+Input transition: 0.0048
+Delays: HL=1.04e-11 LH=1.15e-11
+Input transition: 0.1088
+Delays: HL=1.84e-11 LH=2.56e-11
+Input transition: 0.2608
+Delays: HL=1.96e-11 LH=5.43e-11
+Input transition: 0.5248
+Delays: HL=1.27e-11 LH=7.75e-11
+Input transition: 1
+Delays: HL=1.25e-11 LH=7.73e-11
+
+Capacitance: 0.08
+Input transition: 0.0048
+Delays: HL=1.06e-11 LH=1.16e-11
+Input transition: 0.1088
+Delays: HL=1.86e-11 LH=2.59e-11
+Input transition: 0.2608
+Delays: HL=2.10e-11 LH=3.85e-11
+Input transition: 0.5248
+Delays: HL=1.33e-11 LH=7.82e-11
+Input transition: 1
+Delays: HL=1.25e-11 LH=7.73e-11
+
+Capacitance: 0.16
+Input transition: 0.0048
+Delays: HL=1.08e-11 LH=1.19e-11
+Input transition: 0.1088
+Delays: HL=1.9e-11 LH=2.63e-11
+Input transition: 0.2608
+Delays: HL=2.16e-11 LH=3.90e-11
+Input transition: 0.5248
+Delays: HL=2.08e-11 LH=5.56e-11
+Input transition: 1
+Delays: HL=1.42e-11 LH=7.92e-11

@@ -1,0 +1,15 @@
+Question 1
+- In the design without constraints only the 'clock-to-out' delay is considered (0.09ns)
+	which is clearly wrong since we are in presence of a sequential circuit.
+- In the clock-constrained design the combinatinal circuits between to registers are also
+	considered in the critical path. Moreover, the timing analysis is performed by
+	taking into account the provided clock period. The components' setup time is also
+	considered and added to the critical path. In conclusion, the critical path is
+	subtracted from the clock period in order to obain the slack.
+
+Question 2
+- The combinational paths outside the registers (i.e. not placed between two registers)
+	are not yet included within the set constraints. That being said, they might not
+	respect the clock period timing and so they need to be constrained as well.
+	Since these paths are purely combinational they can be constrained by means of
+	a maximum delay constraint in Design Vision.

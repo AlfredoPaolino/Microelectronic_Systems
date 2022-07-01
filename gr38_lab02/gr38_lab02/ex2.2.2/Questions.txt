@@ -1,0 +1,25 @@
+5) Among the 10 worst critical paths there are practically no differences except the
+	path taken from input to output. The timings are equal since the RCA of a certain
+	level can start the sum computation in an overlapped way with a 1 bit time offset.
+	Therefore, this provides a certain degree of parallelism.
+
+6) There is a substantial difference in the RCAs implementation since some Full Adders are substituted with the
+	FA's function directly implemented by means of logical gates. This reduces the critical path delay at the
+	cost of more area occupancy. The delay is reduced since a group of simple gates is faster than a logical
+	function component in CMOS technology due to parassitics.
+
+7) We noticed no differences since we ourselves wrote a synthesis script (analyze32.tcl)
+	which performed the same steps.
+
+8) When setting a lower maximum delay, the tool performs a tradeoff between timing contraints and
+	consumed area. By running several synthesis, each with different mapping/area efforts, we realized
+	that a synthesized design with lower delay consumes more area than the one synthesized without maximum
+	delay constraint. This is done by synopsis by 'explonding' the RCA structure and directly implementing the
+	RCA function by means of logical gates instead of full adder components. However, in the area recovering
+	phase, the tool tries to map part of the gates to full adder components again in order to reduce the area
+	but keeping the residual slack for the critical paths still close to 0. The result is a 'hybrid' synthesis
+	of the RCAs between a RCA fully implemented thorugh Full Adder components and a RCA fully implemented by
+	means of logical gates.
+	Moreover, in the area recovery phase the paths converted back to the usage of Full Adders are those which
+	are not along the critical path. The critical paths receive somehow an 'area occupancy yield' with respect
+	the non-critical ones.

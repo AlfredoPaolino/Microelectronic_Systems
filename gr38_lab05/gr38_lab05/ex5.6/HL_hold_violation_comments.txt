@@ -1,0 +1,2 @@
+There're no hold violation due to the high feedback response of the CMOS structure, which fastly regenerates the signal
+and therefore the signal is quickly refreshed as soon as we enter the HIGH clock transition.
